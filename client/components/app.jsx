@@ -19,6 +19,19 @@ class App extends React.Component {
       .then(data => this.setState({ grades: data }));
   }
 
+  addNewGrade(newGrade) {
+    fetch('/api/grades', {
+      method: 'POST',
+      headers: { 'Cosntent-Type': 'application/json' },
+      body: JSON.stringify(newGrade)
+    })
+      .then(response => response.json())
+      .then(data => {
+        const myGrades = this.state.grades;
+        this.setState({ grades: myGrades.concat(data) });
+      });
+  }
+
   getAverageGrade() {
     const grades = this.state.grades;
     const gradeLength = grades.length;
