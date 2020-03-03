@@ -9,7 +9,6 @@ class App extends React.Component {
     this.state = ({
       grades: []
     });
-    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
   componentDidMount() {
@@ -21,8 +20,6 @@ class App extends React.Component {
   }
 
   render() {
-    // console.log(this.state.grades);
-
     return (
       <div className="container-fluid">
         <Header />
