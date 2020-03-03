@@ -27,6 +27,7 @@ class App extends React.Component {
       <div className="container-fluid">
         <Header />
         <GradeTable studentGrades={this.state.grades}/>
+        <p className="d-none ml-1">No Grades Recorded</p>
       </div>
     );
   }
