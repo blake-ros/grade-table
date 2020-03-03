@@ -30,6 +30,7 @@ class App extends React.Component {
       <div>
         <Header />
         <GradeTable studentGrades={this.state.grades}/>
+        <Grades />
       </div>
     );
   }
