@@ -4,28 +4,26 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-    // const grades = [];
     this.state = ({
-
+      grades: []
     });
-
+    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
   componentDidMount() {
-
+    fetch('/api/grades', {
+      headers: { 'Content-Type': 'application/json' }
+    })
+      .then(response => response.json())
+      .then(data => this.setState({ grades: data }));
   }
 
+  grade
+
   render() {
+    // console.log(this.state.grades);
     return (
       <h1>Student Grade Table</h1>
-      // <table>
-      //   <thead>
-      //     <td>Student Name</td>
-      //     <td>Course</td>
-      //     <td>Grade</td>
-      //   </thead>
-      //   <tbody></tbody>
-      // </table>
     );
   }
 }
