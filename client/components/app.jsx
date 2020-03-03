@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './header.jsx';
 import Grade from './grade.jsx';
 import GradeTable from './grade-table.jsx';
 
@@ -23,9 +24,10 @@ class App extends React.Component {
   render() {
     console.log(this.state.grades);
     return (
-      <h1>Student Grade Table</h1>,
-      <GradeTable />
-      // <Grade />
+      <div>
+        <Header />
+        <GradeTable />
+      </div>
     );
   }
 }
