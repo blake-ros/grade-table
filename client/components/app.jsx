@@ -19,6 +19,20 @@ class App extends React.Component {
       .then(data => this.setState({ grades: data }));
   }
 
+  getAverageGrade() {
+    const grades = this.state.grades;
+    const gradeLength = grades.length;
+    const newArray = grades.map(grade => {
+      let sum = 0;
+      sum += grade.grade;
+      return sum;
+    });
+    const total = newArray.reduce(function (accumulator, currentValue) {
+      return accumulator + currentValue;
+    }, 0);
+    const myAverageGrades = total / gradeLength;
+  }
+
   render() {
     return (
       <div className="container-fluid">
