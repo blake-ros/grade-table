@@ -31,12 +31,13 @@ class App extends React.Component {
       return accumulator + currentValue;
     }, 0);
     const myAverageGrades = Math.round(total / gradeLength);
+    return myAverageGrades;
   }
 
   render() {
     return (
       <div className="container-fluid">
-        <Header />
+        <Header average={this.getAverageGrade()}/>
         <GradeTable studentGrades={this.state.grades}/>
         <p className="d-none ml-1">No Grades Recorded</p>
       </div>
