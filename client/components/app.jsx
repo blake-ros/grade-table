@@ -30,7 +30,7 @@ class App extends React.Component {
     const total = newArray.reduce(function (accumulator, currentValue) {
       return accumulator + currentValue;
     }, 0);
-    const myAverageGrades = total / gradeLength;
+    const myAverageGrades = Math.round(total / gradeLength);
   }
 
   render() {
