@@ -3,7 +3,10 @@ import React from 'react';
 class Header extends React.Component {
   render() {
     return (
-      <h1 className="row ml-1">Student Grade Table</h1>
+      <header className="row">
+        <h1 className="ml-1 col-9">Student Grade Table</h1>
+        <h2 className="col">Average Grade<span className="badge badge-secondary">{this.props.average}</span></h2>
+      </header>
     );
   }
 }
