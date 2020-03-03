@@ -1,18 +1,15 @@
 import React from 'react';
 
 class GradeTable extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
 
   render() {
     return (
       <table className="table">
         <thead>
           <tr>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
+            <th scope="col">Student Name</th>
+            <th scope="col">Course</th>
+            <th scope="col">Grade</th>
           </tr>
         </thead>
       </table>
@@ -20,3 +17,5 @@ class GradeTable extends React.Component {
   }
 
 }
+
+export default GradeTable;

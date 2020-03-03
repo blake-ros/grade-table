@@ -1,5 +1,6 @@
 import React from 'react';
-// import Grade from './grade.jsx';
+import Grade from './grade.jsx';
+import GradeTable from './grade-table.jsx';
 
 class App extends React.Component {
 
@@ -20,9 +21,11 @@ class App extends React.Component {
   }
 
   render() {
-    // console.log(this.state.grades);
+    console.log(this.state.grades);
     return (
-      <h1>Student Grade Table</h1>
+      <h1>Student Grade Table</h1>,
+      <GradeTable />
+      // <Grade />
     );
   }
 }
