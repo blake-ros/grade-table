@@ -21,7 +21,7 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.grades);
+    // console.log(this.state.grades);
 
     return (
       <div className="container-fluid">
