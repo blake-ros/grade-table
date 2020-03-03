@@ -1,4 +1,5 @@
 import React from 'react';
+// import Grade from './grade.jsx';
 
 class App extends React.Component {
 
@@ -17,8 +18,6 @@ class App extends React.Component {
       .then(response => response.json())
       .then(data => this.setState({ grades: data }));
   }
-
-  grade
 
   render() {
     // console.log(this.state.grades);
