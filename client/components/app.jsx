@@ -24,7 +24,7 @@ class App extends React.Component {
     console.log(this.state.grades);
 
     return (
-      <div>
+      <div className="container-fluid">
         <Header />
         <GradeTable studentGrades={this.state.grades}/>
       </div>
