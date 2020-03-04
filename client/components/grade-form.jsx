@@ -1,10 +1,23 @@
 import React from 'react';
 
 class GradeForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = ({
+      name: '',
+      grade: '',
+      course: ''
+    });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+  }
+
   render() {
 
     return (
-      <form className="col-md-3" submit={this.props.submit}>
+      <form className="col-md-3" onSubmit={this.props.addGrade()}>
         <h2 className="ml-2 mt-1 pb-2" id="addGrade">Add Grade</h2>
         <div className="form-group ml-2">
           <div className="input-group mb-3">
