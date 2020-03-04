@@ -37,7 +37,6 @@ class GradeForm extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <form className="col-md-3" onSubmit={event => {
         event.preventDefault();

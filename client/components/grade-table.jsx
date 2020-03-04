@@ -24,7 +24,6 @@ class GradeTable extends React.Component {
       </div>
     );
   }
-
 }
 
 export default GradeTable;

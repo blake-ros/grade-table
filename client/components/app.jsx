@@ -43,7 +43,7 @@ class App extends React.Component {
       return sum;
     });
     const total = newArray.reduce(function (accumulator, currentValue) {
-      return accumulator + currentValue;
+      return Number(accumulator) + Number(currentValue);
     }, 0);
     const myAverageGrades = Math.round(total / gradeLength);
     return myAverageGrades;

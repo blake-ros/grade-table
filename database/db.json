@@ -59,6 +59,18 @@
       "grade": "86",
       "course": "TA",
       "id": 58
+    },
+    {
+      "name": "Jack Choi",
+      "grade": "50",
+      "course": "Taekwondo",
+      "id": 59
+    },
+    {
+      "name": "Tim Davis",
+      "grade": "99",
+      "course": "Pai Mei ",
+      "id": 60
     }
   ]
 }
