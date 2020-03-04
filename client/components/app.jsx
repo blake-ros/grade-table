@@ -33,6 +33,10 @@ class App extends React.Component {
       });
   }
 
+  handleSubmit(event) {
+    event.preventDefault();
+  }
+
   getAverageGrade() {
     const grades = this.state.grades;
     const gradeLength = grades.length;
