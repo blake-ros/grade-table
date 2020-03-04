@@ -56,15 +56,15 @@ class GradeForm extends React.Component {
         <div className="form-group ml-2">
           <div className="input-group mb-3">
             <i className="fas fa-user fa-lg input-group-prepend input-group-text d-flex"></i>
-            <input name="name" className="form-control form-control-lg" type="text" placeholder="Name" id="name" onChange={this.handleChange}></input>
+            <input name="name" className="form-control form-control-lg" type="text" placeholder="Name" id="name" value={this.state.name} onChange={this.handleChange}></input>
           </div>
           <div className="input-group mb-3">
             <i className="far fa-list-alt fa-lg input-group-prepend input-group-text d-flex"></i>
-            <input name="course" className="form-control form-control-lg" type="text" placeholder="Course" id="course" onChange={this.handleCourseChange}></input>
+            <input name="course" className="form-control form-control-lg" type="text" placeholder="Course" id="course" value={this.state.course} onChange={this.handleCourseChange}></input>
           </div>
           <div className="input-group mb-3">
             <i className="fas fa-graduation-cap fa-md input-group-prepend input-group-text d-flex"></i>
-            <input name="grade" className="form-control form-control-lg" type="text" placeholder="Grade" id="grade" onChange={this.handleGradeChange}></input>
+            <input name="grade" className="form-control form-control-lg" type="text" placeholder="Grade" id="grade" value={this.state.grade} onChange={this.handleGradeChange}></input>
           </div>
           <button type="submit" className="btn btn-success btn-sm mr-2 pr-3 pl-3 pt-2 pb-2" id="add">Add</button>
           <button type="reset" className="btn btn-outline-secondary btn-sm pl-2 pr-2 pt-2 pb-2">Cancel</button>
