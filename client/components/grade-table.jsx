@@ -10,19 +10,20 @@ class GradeTable extends React.Component {
     });
 
     return (
-      <table className="table table-striped table-bordered">
-        <thead className="thead-dark">
-          <tr>
-            <th scope="col">Student Name</th>
-            <th scope="col">Course</th>
-            <th scope="col">Grade</th>
-          </tr>
-        </thead>
-        <tbody>{gradeRow}</tbody>
-      </table>
+      <div className="col-md-8">
+        <table className="table table-striped table-bordered">
+          <thead className="thead-dark">
+            <tr>
+              <th scope="col">Student Name</th>
+              <th scope="col">Course</th>
+              <th scope="col">Grade</th>
+            </tr>
+          </thead>
+          <tbody>{gradeRow}</tbody>
+        </table>
+      </div>
     );
   }
-
 }
 
 export default GradeTable;
