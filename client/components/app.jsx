@@ -10,6 +10,7 @@ class App extends React.Component {
     this.state = ({
       grades: []
     });
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentDidMount() {
@@ -58,7 +59,7 @@ class App extends React.Component {
         <Header average={this.getAverageGrade()}/>
         <div className="row">
           <GradeTable studentGrades={this.state.grades}/>
-          <GradeForm />
+          <GradeForm submit={this.handleSubmit}/>
         </div>
         <p className="d-none ml-1">No Grades Recorded</p>
       </div>

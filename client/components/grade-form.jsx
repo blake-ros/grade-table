@@ -4,7 +4,7 @@ class GradeForm extends React.Component {
   render() {
 
     return (
-      <form className="col-md-3">
+      <form className="col-md-3" submit={this.props.submit}>
         <h2 className="ml-2 mt-1 pb-2" id="addGrade">Add Grade</h2>
         <div className="form-group ml-2">
           <div className="input-group mb-3">
