@@ -34,16 +34,19 @@ class App extends React.Component {
       });
   }
 
-  deleteGrade(grade) {
+  deleteGrade(id) {
+    console.log(id);
     fetch('/api/grades/:id', {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(grade)
+      body: JSON.stringify(id)
     })
       .then(response => response.json())
       .then(data => {
+        console.log(data);
         this.setState({ grades: this.state.grades.slice(data) });
       });
+    console.log(id);
   }
 
   getAverageGrade() {
@@ -62,6 +65,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log(this.state);
     return (
       <div className="container-fluid">
         <Header average={this.getAverageGrade()}/>

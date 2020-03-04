@@ -5,8 +5,9 @@ class GradeTable extends React.Component {
 
   render() {
     const grades = this.props.studentGrades;
+    const deleteThisGrade = this.props.deleteGrade;
     const gradeRow = grades.map(grade => {
-      return <Grade key={grade.id} name={grade.name} course={grade.course} grade={grade.grade} />;
+      return <Grade key={grade.id} name={grade.name} course={grade.course} grade={grade.grade} onDelete={id => deleteThisGrade(grade.id)}/>;
     });
 
     return (

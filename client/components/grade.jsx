@@ -8,7 +8,7 @@ class Grades extends React.Component {
         <td scope="col"> {this.props.name } </td>
         <td scope="col"> {this.props.course} </td>
         <td scope="col"> {this.props.grade} </td>
-        <td scope="col"><button className="btn btn-danger">Delete</button></td>
+        <td scope="col"><button className="btn btn-danger" onClick={this.props.onDelete}>Delete</button></td>
       </tr>
     );
   }
