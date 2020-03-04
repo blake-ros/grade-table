@@ -2,6 +2,7 @@ import React from 'react';
 
 class GradeForm extends React.Component {
   render() {
+
     return (
       <form className="col-md-3">
         <h2 className="ml-2 mt-1 pb-2" id="addGrade">Add Grade</h2>
