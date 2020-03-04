@@ -7,9 +7,11 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = ({
+    this.state = {
       grades: []
-    });
+    };
+
+    this.addNewGrade = this.addNewGrade.bind(this);
   }
 
   componentDidMount() {
@@ -23,13 +25,12 @@ class App extends React.Component {
   addNewGrade(newGrade) {
     fetch('/api/grades', {
       method: 'POST',
-      headers: { 'Cosntent-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newGrade)
     })
       .then(response => response.json())
       .then(data => {
-        const myGrades = this.state.grades;
-        this.setState({ grades: myGrades.concat(data) });
+        this.setState({ grades: this.state.grades.concat(data) });
       });
   }
 
