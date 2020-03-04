@@ -66,8 +66,8 @@ class App extends React.Component {
       <div className="container-fluid">
         <Header average={this.getAverageGrade()}/>
         <div className="row">
-          <GradeTable studentGrades={this.state.grades}/>
-          <GradeForm addGrade={this.addNewGrade} deleteGrade={this.deleteGrade}/>
+          <GradeTable studentGrades={this.state.grades} deleteGrade={this.deleteGrade} />
+          <GradeForm addGrade={this.addNewGrade} />
         </div>
         <p className="d-none ml-1">No Grades Recorded</p>
       </div>
