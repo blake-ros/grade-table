@@ -11,7 +11,7 @@ class GradeTable extends React.Component {
     });
 
     return (
-      <div className="col-md-8">
+      <div className="col-xl-8">
         <table className="table table-striped table-bordered">
           <thead className="thead-dark">
             <tr>

@@ -48,7 +48,7 @@ class GradeForm extends React.Component {
   render() {
 
     return (
-      <form className="col-md-3" onReset={this.handleReset} onSubmit={event => {
+      <form className="col-xl-3" onReset={this.handleReset} onSubmit={event => {
         event.preventDefault();
         this.props.addGrade(this.state);
       }}>
