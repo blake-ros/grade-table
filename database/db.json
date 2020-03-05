@@ -19,106 +19,10 @@
       "grade": 100
     },
     {
-      "name": "Blake Ros",
-      "grade": "100",
-      "course": "Web Dev",
-      "id": 52
-    },
-    {
-      "name": "Andrew Song",
-      "grade": "33",
-      "course": "Web Dev",
-      "id": 53
-    },
-    {
-      "name": "Blake Ros",
-      "grade": "33",
-      "course": "Software God",
-      "id": 54
-    },
-    {
-      "name": "Andrew Song",
-      "grade": "3",
-      "course": "Ballet",
-      "id": 55
-    },
-    {
-      "name": "John Choi",
-      "grade": "3",
-      "course": "Software God",
-      "id": 56
-    },
-    {
-      "name": "Andrew Song",
+      "name": "Uzair Ashraf",
       "grade": "80",
-      "course": "Software God",
-      "id": 57
-    },
-    {
-      "name": "Kevin Akahoshi",
-      "grade": "86",
-      "course": "TA",
-      "id": 58
-    },
-    {
-      "name": "Jack Choi",
-      "grade": "50",
-      "course": "Taekwondo",
-      "id": 59
-    },
-    {
-      "name": "Tim Davis",
-      "grade": "99",
-      "course": "Pai Mei ",
-      "id": 60
-    },
-    {
-      "name": "Cindy",
-      "grade": "100",
-      "course": "Cooking",
-      "id": 61
-    },
-    {
-      "name": "Uzair Ashraf",
-      "grade": "99",
       "course": "Instructor",
-      "id": 62
-    },
-    {
-      "name": "Uzair Ashraf",
-      "grade": "99",
-      "course": "Instructor",
-      "id": 63
-    },
-    {
-      "name": "Mia Pham",
-      "grade": "100",
-      "course": "Hockey",
-      "id": 64
-    },
-    {
-      "name": "Uzair Ashraf",
-      "grade": "100",
-      "course": "Instructor",
-      "id": 65
-    },
-    {
-      "name": "Tracy Luu",
-      "grade": "100",
-      "course": "Assets Queen",
-      "id": 66
-    },
-    {
-      "name": "Uzair Ashraf",
-      "grade": "100",
-      "course": "Instructor",
-      "id": 67
-    },
-    {
-      "name": "Uzair Ashraf",
-      "grade": "100",
-      "course": "Instructor",
-      "id": 68
+      "id": 4
     }
   ]
 }

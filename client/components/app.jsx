@@ -12,6 +12,7 @@ class App extends React.Component {
     };
 
     this.addNewGrade = this.addNewGrade.bind(this);
+    this.deleteGrade = this.deleteGrade.bind(this);
   }
 
   componentDidMount() {
@@ -31,6 +32,20 @@ class App extends React.Component {
       .then(response => response.json())
       .then(data => {
         this.setState({ grades: this.state.grades.concat(data) });
+      });
+  }
+
+  deleteGrade(id) {
+    function filterGrade(grade) {
+      return grade.id !== id;
+    }
+    fetch('/api/grades/' + id, {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' }
+    })
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ grades: this.state.grades.filter(filterGrade) });
       });
   }
 
@@ -54,8 +69,8 @@ class App extends React.Component {
       <div className="container-fluid">
         <Header average={this.getAverageGrade()}/>
         <div className="row">
-          <GradeTable studentGrades={this.state.grades}/>
-          <GradeForm addGrade={this.addNewGrade}/>
+          <GradeTable studentGrades={this.state.grades} deleteGrade={this.deleteGrade} />
+          <GradeForm addGrade={this.addNewGrade} />
         </div>
         <p className="d-none ml-1">No Grades Recorded</p>
       </div>

@@ -5,7 +5,7 @@ class GradeForm extends React.Component {
     super(props);
     this.state = {
       name: '',
-      grade: null,
+      grade: undefined,
       course: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -22,7 +22,7 @@ class GradeForm extends React.Component {
   handleReset() {
     this.setState({
       name: '',
-      grade: null,
+      grade: undefined,
       course: ''
     });
   }
