@@ -17,6 +17,13 @@ A full stack JavaScript application for teachers who want to manage course recor
 
 Link: https://grade-table.blakeros.com/
 
+## Features
+
+- Teachers can view a list of recorded grades
+- Teachers can view the average grade
+- Teachers can add a grade to the table. 
+- Teachers can delete a grade from the table.
+
 ## Preview
 
 ![SGT React](sgt-react.gif)
